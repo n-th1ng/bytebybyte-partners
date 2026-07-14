@@ -63,7 +63,7 @@ export default function NGOsPage() {
 
         <div className="relative z-10 mx-auto max-w-4xl">
           <FadeIn>
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-rose-500/20 bg-rose-500/10 px-4 py-1.5 text-sm text-rose-300">
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-coral-500/20 bg-coral-500/10 px-4 py-1.5 text-sm text-coral-400">
               <Heart className="h-4 w-4" />
               For NGOs
             </div>
@@ -74,19 +74,19 @@ export default function NGOsPage() {
                 ByteByByte
               </span>
             </h1>
-            <p className="mt-2 text-xl font-semibold text-dark-200">
+            <p className="mt-2 text-xl font-semibold text-ink-200">
               Empower Your Community. We&apos;ll Handle the Rest.
             </p>
-            <p className="mt-4 max-w-2xl text-lg text-dark-300">
+            <p className="mt-4 max-w-2xl text-lg text-ink-300">
               You already have the trust of your community. We bring the
               volunteers, curriculum, and expertise.
             </p>
-            <p className="mt-3 max-w-2xl text-dark-300">
+            <p className="mt-3 max-w-2xl text-ink-300">
               By partnering with ByteByByte, you can offer completely free
               digital literacy, AI, and cybersecurity programs to the people you
               serve without adding to your team&apos;s workload.
             </p>
-            <p className="mt-3 max-w-2xl text-dark-300 italic">
+            <p className="mt-3 max-w-2xl text-ink-300 italic">
               Together, we can create lasting impact where it&apos;s needed
               most.
             </p>
@@ -98,19 +98,19 @@ export default function NGOsPage() {
       <section className="px-6 py-20">
         <div className="mx-auto max-w-4xl">
           <FadeIn>
-            <h2 className="text-3xl font-bold text-white">Why Partner with Us?</h2>
+            <h2 className="font-heading text-3xl font-semibold text-ink-100">Why Partner with Us?</h2>
           </FadeIn>
 
           <StaggerChildren className="mt-8 grid gap-4 md:grid-cols-2">
             {whyPartner.map((item) => (
               <StaggerItem key={item.title}>
-                <div className="flex items-start gap-4 rounded-xl border border-dark-800 bg-dark-900/50 p-5">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-rose-500/10">
-                    <item.icon className="h-5 w-5 text-rose-400" />
+                <div className="flex items-start gap-4 rounded-xl border border-navy-700 bg-navy-900/50 p-5">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-coral-500/10">
+                    <item.icon className="h-5 w-5 text-coral-500" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-white">{item.title}</h3>
-                    <p className="mt-1 text-sm text-dark-400">{item.desc}</p>
+                    <p className="mt-1 text-sm text-ink-400">{item.desc}</p>
                   </div>
                 </div>
               </StaggerItem>
@@ -120,26 +120,26 @@ export default function NGOsPage() {
       </section>
 
       {/* What We Need / What We Bring */}
-      <section className="border-y border-dark-800 bg-dark-900/30 px-6 py-20">
+      <section className="border-y border-navy-700 bg-navy-900/30 px-6 py-20">
         <div className="mx-auto max-w-4xl">
           <div className="grid gap-10 md:grid-cols-2">
             <FadeIn>
               <div>
-                <h2 className="text-2xl font-bold text-white">
+                <h2 className="font-heading text-2xl font-semibold text-ink-100">
                   What We Need from You
                 </h2>
                 <StaggerChildren className="mt-6 space-y-3">
                   {whatWeNeed.map((item) => (
                     <StaggerItem key={item}>
                       <div className="flex items-center gap-3">
-                        <CheckCircle className="h-4 w-4 shrink-0 text-rose-400" />
-                        <span className="text-dark-200">{item}</span>
+                        <CheckCircle className="h-4 w-4 shrink-0 text-coral-500" />
+                        <span className="text-ink-200">{item}</span>
                       </div>
                     </StaggerItem>
                   ))}
                 </StaggerChildren>
                 <FadeIn delay={0.2}>
-                  <p className="mt-6 text-lg font-semibold text-white">
+                  <p className="mt-6 font-heading text-lg font-semibold text-ink-100">
                     That&apos;s it.
                   </p>
                 </FadeIn>
@@ -148,7 +148,7 @@ export default function NGOsPage() {
 
             <FadeIn delay={0.1}>
               <div>
-                <h2 className="text-2xl font-bold text-white">
+                <h2 className="font-heading text-2xl font-semibold text-ink-100">
                   What We Bring
                 </h2>
                 <StaggerChildren className="mt-6 space-y-3">
@@ -156,13 +156,13 @@ export default function NGOsPage() {
                     <StaggerItem key={item}>
                       <div className="flex items-center gap-3">
                         <CheckCircle className="h-4 w-4 shrink-0 text-emerald-400" />
-                        <span className="text-dark-200">{item}</span>
+                        <span className="text-ink-200">{item}</span>
                       </div>
                     </StaggerItem>
                   ))}
                 </StaggerChildren>
                 <FadeIn delay={0.3}>
-                  <p className="mt-6 text-sm text-dark-400">
+                  <p className="mt-6 text-sm text-ink-400">
                     We take care of the planning and execution so your team can
                     stay focused on your community.
                   </p>
@@ -176,29 +176,29 @@ export default function NGOsPage() {
       {/* CTA */}
       <section className="px-6 py-24">
         <FadeIn>
-          <div className="mx-auto max-w-4xl rounded-3xl border border-rose-500/20 bg-gradient-to-br from-rose-500/10 to-pink-500/5 p-12 text-center">
-            <h2 className="text-3xl font-bold text-white">
+          <div className="mx-auto max-w-4xl rounded-3xl border border-coral-500/20 bg-gradient-to-br from-coral-500/10 to-coral-500/5 p-12 text-center" style={{ boxShadow: "0 0 60px rgba(255, 212, 59, 0.12)" }}>
+            <h2 className="font-heading text-3xl font-semibold text-ink-100">
               Let&apos;s Create Impact Together
             </h2>
-            <p className="mx-auto mt-4 max-w-xl text-dark-300">
+            <p className="mx-auto mt-4 max-w-xl text-ink-300">
               Whether you work with students, senior citizens, or underserved
               communities, we&apos;d love to explore how ByteByByte can support
               your mission.
             </p>
-            <p className="mx-auto mt-3 max-w-xl text-dark-300">
+            <p className="mx-auto mt-3 max-w-xl text-ink-300">
               Together, we can help more people build the confidence and skills
               they need to thrive in today&apos;s digital world.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <a
                 href="mailto:bytebybyteinitiative@gmail.com?subject=NGO%20Partnership%20Inquiry"
-                className="inline-flex items-center gap-2 rounded-xl bg-brand-600 px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-brand-500"
+                className="inline-flex items-center gap-2 rounded-xl bg-brand-500 px-6 py-3 font-heading text-sm font-semibold text-ink-100 transition-all hover:bg-brand-600"
               >
                 Get in Touch
                 <ArrowRight className="h-4 w-4" />
               </a>
             </div>
-            <div className="mt-8 flex flex-wrap justify-center gap-6 text-sm text-dark-400">
+            <div className="mt-8 flex flex-wrap justify-center gap-6 text-sm text-ink-400">
               <span>bytebybyteinitiative@gmail.com</span>
               <span>bbb-initiative.netlify.app</span>
               <span>LinkedIn: ByteByByte Initiative</span>

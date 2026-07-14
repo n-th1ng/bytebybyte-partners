@@ -64,7 +64,7 @@ export default function SchoolsPage() {
 
         <div className="relative z-10 mx-auto max-w-4xl">
           <FadeIn>
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-4 py-1.5 text-sm text-emerald-300">
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-spark-500/20 bg-spark-500/10 px-4 py-1.5 text-sm text-spark-400">
               <GraduationCap className="h-4 w-4" />
               For Schools
             </div>
@@ -75,16 +75,16 @@ export default function SchoolsPage() {
                 ByteByByte
               </span>
             </h1>
-            <p className="mt-2 text-xl font-semibold text-dark-200">
+            <p className="mt-2 text-xl font-semibold text-ink-200">
               Future-Ready Skills for Your Students. Zero Cost to Your
               Institution.
             </p>
-            <p className="mt-4 max-w-2xl text-lg text-dark-300">
+            <p className="mt-4 max-w-2xl text-lg text-ink-300">
               Today&apos;s students need more than textbooks &mdash; they need
               digital confidence, AI literacy, and practical skills they&apos;ll
               carry into higher education and future careers.
             </p>
-            <p className="mt-3 max-w-2xl text-dark-300">
+            <p className="mt-3 max-w-2xl text-ink-300">
               ByteByByte delivers engaging, hands-on workshops that help
               students build real projects while requiring minimal effort from
               your institution.
@@ -97,19 +97,19 @@ export default function SchoolsPage() {
       <section className="px-6 py-20">
         <div className="mx-auto max-w-4xl">
           <FadeIn>
-            <h2 className="text-3xl font-bold text-white">Why Partner With Us?</h2>
+            <h2 className="font-heading text-3xl font-semibold text-ink-100">Why Partner With Us?</h2>
           </FadeIn>
 
           <StaggerChildren className="mt-8 grid gap-4 md:grid-cols-2">
             {whyPartner.map((item) => (
               <StaggerItem key={item.title}>
-                <div className="flex items-start gap-4 rounded-xl border border-dark-800 bg-dark-900/50 p-5">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-emerald-500/10">
-                    <item.icon className="h-5 w-5 text-emerald-400" />
+                <div className="flex items-start gap-4 rounded-xl border border-navy-700 bg-navy-900/50 p-5">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-spark-500/10">
+                    <item.icon className="h-5 w-5 text-spark-500" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-white">{item.title}</h3>
-                    <p className="mt-1 text-sm text-dark-400">{item.desc}</p>
+                    <p className="mt-1 text-sm text-ink-400">{item.desc}</p>
                   </div>
                 </div>
               </StaggerItem>
@@ -119,26 +119,26 @@ export default function SchoolsPage() {
       </section>
 
       {/* What We Need / What We Provide */}
-      <section className="border-y border-dark-800 bg-dark-900/30 px-6 py-20">
+      <section className="border-y border-navy-700 bg-navy-900/30 px-6 py-20">
         <div className="mx-auto max-w-4xl">
           <div className="grid gap-10 md:grid-cols-2">
             <FadeIn>
               <div>
-                <h2 className="text-2xl font-bold text-white">
+                <h2 className="font-heading text-2xl font-semibold text-ink-100">
                   What We Need From You
                 </h2>
                 <StaggerChildren className="mt-6 space-y-3">
                   {whatWeNeed.map((item) => (
                     <StaggerItem key={item}>
                       <div className="flex items-center gap-3">
-                        <CheckCircle className="h-4 w-4 shrink-0 text-emerald-400" />
-                        <span className="text-dark-200">{item}</span>
+                        <CheckCircle className="h-4 w-4 shrink-0 text-spark-500" />
+                        <span className="text-ink-200">{item}</span>
                       </div>
                     </StaggerItem>
                   ))}
                 </StaggerChildren>
                 <FadeIn delay={0.2}>
-                  <p className="mt-6 text-lg font-semibold text-white">
+                  <p className="mt-6 font-heading text-lg font-semibold text-ink-100">
                     That&apos;s all.
                   </p>
                 </FadeIn>
@@ -147,7 +147,7 @@ export default function SchoolsPage() {
 
             <FadeIn delay={0.1}>
               <div>
-                <h2 className="text-2xl font-bold text-white">
+                <h2 className="font-heading text-2xl font-semibold text-ink-100">
                   What We Provide
                 </h2>
                 <StaggerChildren className="mt-6 space-y-3">
@@ -155,13 +155,13 @@ export default function SchoolsPage() {
                     <StaggerItem key={item}>
                       <div className="flex items-center gap-3">
                         <CheckCircle className="h-4 w-4 shrink-0 text-brand-400" />
-                        <span className="text-dark-200">{item}</span>
+                        <span className="text-ink-200">{item}</span>
                       </div>
                     </StaggerItem>
                   ))}
                 </StaggerChildren>
                 <FadeIn delay={0.3}>
-                  <p className="mt-6 text-sm text-dark-400">
+                  <p className="mt-6 text-sm text-ink-400">
                     Our goal is to make delivering high-quality digital education
                     as simple as possible for your institution.
                   </p>
@@ -175,29 +175,29 @@ export default function SchoolsPage() {
       {/* CTA */}
       <section className="px-6 py-24">
         <FadeIn>
-          <div className="mx-auto max-w-4xl rounded-3xl border border-emerald-500/20 bg-gradient-to-br from-emerald-500/10 to-teal-500/5 p-12 text-center">
-            <h2 className="text-3xl font-bold text-white">
+          <div className="mx-auto max-w-4xl rounded-3xl border border-spark-500/20 bg-gradient-to-br from-spark-500/10 to-spark-400/5 p-12 text-center" style={{ boxShadow: "0 0 60px rgba(255, 212, 59, 0.12)" }}>
+            <h2 className="font-heading text-3xl font-semibold text-ink-100">
               Let&apos;s Prepare Students for Tomorrow
             </h2>
-            <p className="mx-auto mt-4 max-w-xl text-dark-300">
+            <p className="mx-auto mt-4 max-w-xl text-ink-300">
               By partnering with ByteByByte, you&apos;re giving students the
               opportunity to develop practical skills that classrooms often
               don&apos;t have time to teach.
             </p>
-            <p className="mx-auto mt-3 max-w-xl text-dark-300">
+            <p className="mx-auto mt-3 max-w-xl text-ink-300">
               Together, we can help every student become more confident,
               capable, and prepared for an increasingly digital world.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <a
                 href="mailto:bytebybyteinitiative@gmail.com?subject=School%20Partnership%20Inquiry"
-                className="inline-flex items-center gap-2 rounded-xl bg-brand-600 px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-brand-500"
+                className="inline-flex items-center gap-2 rounded-xl bg-brand-500 px-6 py-3 font-heading text-sm font-semibold text-ink-100 transition-all hover:bg-brand-600"
               >
                 Get in Touch
                 <ArrowRight className="h-4 w-4" />
               </a>
             </div>
-            <div className="mt-8 flex flex-wrap justify-center gap-6 text-sm text-dark-400">
+            <div className="mt-8 flex flex-wrap justify-center gap-6 text-sm text-ink-400">
               <span>bytebybyteinitiative@gmail.com</span>
               <span>bbb-initiative.netlify.app</span>
               <span>LinkedIn: ByteByByte Initiative</span>
