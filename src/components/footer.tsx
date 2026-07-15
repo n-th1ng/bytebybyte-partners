@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export function Footer() {
   return (
-    <footer className="border-t border-navy-700 bg-navy-900">
+    <footer className="border-t border-rule bg-paper-2">
       <div className="mx-auto max-w-6xl px-6 py-12">
         <div className="grid gap-8 md:grid-cols-3">
           <div>
@@ -14,16 +14,16 @@ export function Footer() {
               height={32}
               className="h-7 w-auto rounded"
             />
-            <p className="mt-3 text-sm text-ink-400">
+            <p className="mt-3 text-sm text-ink-4">
               Bridging the digital &amp; AI divide, one byte at a time.
             </p>
           </div>
 
           <div>
-            <h4 className="mb-3 text-sm font-semibold text-ink-200">
+            <h4 className="mb-3 text-sm font-semibold text-ink-2">
               Partner With Us
             </h4>
-            <ul className="space-y-2 text-sm text-ink-400">
+            <ul className="space-y-2 text-sm text-ink-4">
               <li>
                 <Link href="/volunteers" className="transition-colors hover:text-spark-500">
                   Volunteers
@@ -53,10 +53,10 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="mb-3 text-sm font-semibold text-ink-200">
+            <h4 className="mb-3 text-sm font-semibold text-ink-2">
               Contact
             </h4>
-            <ul className="space-y-2 text-sm text-ink-400">
+            <ul className="space-y-2 text-sm text-ink-4">
               <li>
                 <a
                   href="mailto:bytebybyteinitiative@gmail.com"
@@ -89,7 +89,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-navy-700 pt-6 text-center text-xs text-ink-500">
+        <div className="mt-12 border-t border-rule pt-6 text-center text-xs text-ink-5">
           &copy; {new Date().getFullYear()} ByteByByte Initiative. All rights
           reserved.
         </div>

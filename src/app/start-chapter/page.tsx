@@ -28,7 +28,7 @@ const whyBecome = [
   {
     icon: Trophy,
     title: "Build Your Profile",
-    desc: "Being a Chapter Lead demonstrates initiative, responsibility, and leadership — qualities valued by universities, employers, and scholarship committees.",
+    desc: "Being a Chapter Lead demonstrates initiative, responsibility, and leadership. These are qualities valued by universities, employers, and scholarship committees.",
   },
   {
     icon: Users,
@@ -66,38 +66,32 @@ export default function StartChapterPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative flex min-h-[70vh] items-center overflow-hidden px-6 pt-24 pb-16">
-        <div className="pointer-events-none absolute inset-0">
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(139,92,246,0.12),transparent)]" />
-        </div>
-
-        <div className="relative z-10 mx-auto max-w-4xl">
+      <section className="px-6 pt-32 pb-20">
+        <div className="mx-auto max-w-3xl">
           <FadeIn>
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-brand-500/20 bg-brand-500/10 px-4 py-1.5 text-sm text-brand-300">
+            <div className="mb-4 inline-flex items-center gap-2 mono-label text-accent">
               <MapPin className="h-4 w-4" />
               Start a Chapter
             </div>
-            <h1 className="text-4xl font-bold leading-tight text-white md:text-6xl">
+            <h1 className="font-display text-4xl font-semibold leading-tight text-ink md:text-6xl">
               Start a ByteByByte
               <br />
-              <span className="bg-gradient-to-r from-violet-400 to-purple-400 bg-clip-text text-transparent">
-                Chapter
-              </span>
+              <span className="text-accent">Chapter</span>
             </h1>
-            <p className="mt-2 text-xl font-semibold text-ink-200">
+            <p className="mt-2 text-xl font-semibold text-ink-2">
               Build Something Bigger Than Yourself.
             </p>
-            <p className="mt-4 max-w-2xl text-lg text-ink-300">
+            <p className="mt-4 max-w-2xl text-lg text-ink-3">
               Starting a ByteByByte chapter isn&apos;t just another leadership
-              position &mdash; it&apos;s an opportunity to create lasting impact
-              in your community.
+              position. It is an opportunity to create lasting impact in your
+              community.
             </p>
-            <p className="mt-3 max-w-2xl text-ink-300">
+            <p className="mt-3 max-w-2xl text-ink-3">
               As a Chapter Lead, you&apos;ll build a team, form partnerships with
               schools and NGOs, organise workshops, and help students and senior
               citizens gain essential digital skills.
             </p>
-            <p className="mt-3 max-w-2xl text-ink-300 italic">
+            <p className="mt-3 max-w-2xl text-ink-3">
               If you&apos;ve ever wanted to lead something meaningful, this is
               where you start.
             </p>
@@ -109,7 +103,7 @@ export default function StartChapterPage() {
       <section className="px-6 py-20">
         <div className="mx-auto max-w-4xl">
           <FadeIn>
-            <h2 className="font-heading text-3xl font-semibold text-ink-100">
+            <h2 className="font-display text-3xl font-semibold text-ink">
               Why Become a Chapter Lead?
             </h2>
           </FadeIn>
@@ -117,13 +111,13 @@ export default function StartChapterPage() {
           <StaggerChildren className="mt-8 grid gap-4 md:grid-cols-2">
             {whyBecome.map((item) => (
               <StaggerItem key={item.title}>
-                <div className="flex items-start gap-4 rounded-xl border border-navy-700 bg-navy-900/50 p-5">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-brand-500/10">
-                    <item.icon className="h-5 w-5 text-brand-400" />
+                <div className="flex items-start gap-4 rounded-xl border border-rule bg-paper-2 p-5">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-accent/10">
+                    <item.icon className="h-5 w-5 text-accent" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-white">{item.title}</h3>
-                    <p className="mt-1 text-sm text-ink-400">{item.desc}</p>
+                    <h3 className="font-semibold text-ink">{item.title}</h3>
+                    <p className="mt-1 text-sm text-ink-4">{item.desc}</p>
                   </div>
                 </div>
               </StaggerItem>
@@ -133,25 +127,25 @@ export default function StartChapterPage() {
       </section>
 
       {/* What You'll Do */}
-      <section className="border-y border-navy-700 bg-navy-900/30 px-6 py-20">
+      <section className="border-y border-rule bg-paper-2 px-6 py-20">
         <div className="mx-auto max-w-4xl">
           <FadeIn>
-            <h2 className="font-heading text-3xl font-semibold text-ink-100">What You&apos;ll Do</h2>
+            <h2 className="font-display text-3xl font-semibold text-ink">What You&apos;ll Do</h2>
           </FadeIn>
 
           <StaggerChildren className="mt-8 space-y-3">
             {whatYouDo.map((item) => (
               <StaggerItem key={item}>
                 <div className="flex items-center gap-3">
-                  <CheckCircle className="h-4 w-4 shrink-0 text-brand-400" />
-                  <span className="text-ink-200">{item}</span>
+                  <CheckCircle className="h-4 w-4 shrink-0 text-accent" />
+                  <span className="text-ink-2">{item}</span>
                 </div>
               </StaggerItem>
             ))}
           </StaggerChildren>
 
           <FadeIn delay={0.2} className="mt-6">
-            <p className="text-sm text-ink-400">
+            <p className="text-sm text-ink-4">
               You&apos;ll have the support of the ByteByByte core team every
               step of the way.
             </p>
@@ -165,25 +159,25 @@ export default function StartChapterPage() {
           <div className="grid gap-10 md:grid-cols-2">
             <FadeIn>
               <div>
-                <h2 className="font-heading text-2xl font-semibold text-ink-100">
+                <h2 className="font-display text-2xl font-semibold text-ink">
                   What We Expect
                 </h2>
-                <p className="mt-3 text-sm text-ink-400">
+                <p className="mt-3 text-sm text-ink-4">
                   We&apos;re looking for people who are:
                 </p>
                 <StaggerChildren className="mt-4 space-y-3">
                   {whatWeExpect.map((item) => (
                     <StaggerItem key={item}>
                       <div className="flex items-center gap-3">
-                        <CheckCircle className="h-4 w-4 shrink-0 text-brand-400" />
-                        <span className="text-ink-200">{item}</span>
+                        <CheckCircle className="h-4 w-4 shrink-0 text-accent" />
+                        <span className="text-ink-2">{item}</span>
                       </div>
                     </StaggerItem>
                   ))}
                 </StaggerChildren>
                 <FadeIn delay={0.2}>
-                  <p className="mt-4 text-sm text-ink-400 italic">
-                    No prior leadership experience is required — just the
+                  <p className="mt-4 text-sm text-ink-4">
+                    No prior leadership experience is required, just the
                     willingness to take initiative.
                   </p>
                 </FadeIn>
@@ -192,7 +186,7 @@ export default function StartChapterPage() {
 
             <FadeIn delay={0.1}>
               <div>
-                <h2 className="font-heading text-2xl font-semibold text-ink-100">
+                <h2 className="font-display text-2xl font-semibold text-ink">
                   What You&apos;ll Receive
                 </h2>
                 <StaggerChildren className="mt-6 space-y-3">
@@ -200,7 +194,7 @@ export default function StartChapterPage() {
                     <StaggerItem key={item}>
                       <div className="flex items-center gap-3">
                         <CheckCircle className="h-4 w-4 shrink-0 text-emerald-400" />
-                        <span className="text-ink-200">{item}</span>
+                        <span className="text-ink-2">{item}</span>
                       </div>
                     </StaggerItem>
                   ))}
@@ -214,9 +208,9 @@ export default function StartChapterPage() {
       {/* CTA */}
       <section className="px-6 pb-24">
         <FadeIn>
-          <div className="mx-auto max-w-4xl rounded-3xl border border-brand-500/20 bg-gradient-to-br from-brand-500/10 to-spark-500/5 p-12 text-center" style={{ boxShadow: "0 0 60px rgba(255, 212, 59, 0.12)" }}>
-            <h2 className="font-heading text-3xl font-semibold text-ink-100">Ready to Lead?</h2>
-            <p className="mx-auto mt-4 max-w-xl text-ink-300">
+          <div className="mx-auto max-w-4xl rounded-3xl border border-brand-500/20 bg-gradient-to-br from-accent/10 to-accent-warm/5 p-12 text-center" style={{ boxShadow: "0 0 60px rgba(255, 212, 59, 0.10)" }}>
+            <h2 className="font-display text-3xl font-semibold text-ink">Ready to Lead?</h2>
+            <p className="mx-auto mt-4 max-w-xl text-ink-3">
               Every successful chapter starts with one person willing to take
               the first step. If you&apos;re ready to create real impact,
               we&apos;d love to help you build the next ByteByByte chapter.
@@ -224,13 +218,13 @@ export default function StartChapterPage() {
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <a
                 href="mailto:bytebybyteinitiative@gmail.com?subject=Start%20a%20Chapter%20Inquiry"
-                className="inline-flex items-center gap-2 rounded-xl bg-brand-500 px-6 py-3 font-heading text-sm font-semibold text-ink-100 transition-all hover:bg-brand-600"
+                className="inline-flex items-center gap-2 rounded-xl bg-accent px-6 py-3 font-display text-sm font-semibold text-ink transition-all hover:bg-brand-600"
               >
                 Get in Touch
                 <ArrowRight className="h-4 w-4" />
               </a>
             </div>
-            <div className="mt-8 flex flex-wrap justify-center gap-6 text-sm text-ink-400">
+            <div className="mt-8 flex flex-wrap justify-center gap-6 text-sm text-ink-4">
               <span>bytebybyteinitiative@gmail.com</span>
               <span>bbb-initiative.netlify.app</span>
               <span>LinkedIn: ByteByByte Initiative</span>
