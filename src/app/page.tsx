@@ -111,9 +111,10 @@ function ctaButton(href: string, children: React.ReactNode, primary?: boolean, e
   const styles = primary
     ? "bg-accent text-accent-ink hover:bg-brand-600"
     : "border border-rule-2 text-ink-2 hover:border-ink-4 hover:bg-paper-3";
-  const ext = external ? { target: "_blank", rel: "noopener noreferrer" } : {};
+  const shadow = primary ? { boxShadow: "0 0 24px rgba(255, 212, 59, 0.25)" } : {};
+  const ext = external || href.startsWith("mailto:") ? { target: "_blank", rel: "noopener noreferrer" } : {};
   return (
-    <a href={href} className={`${base} ${styles}`} {...ext}>
+    <a href={href} className={`${base} ${styles}`} style={shadow} {...ext}>
       {children}
     </a>
   );

@@ -185,7 +185,10 @@ export default function SchoolsPage() {
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <a
                 href="mailto:bytebybyteinitiative@gmail.com?subject=School%20Partnership%20Inquiry"
-                className="inline-flex items-center gap-2 rounded-xl bg-accent px-6 py-3 font-display text-sm font-semibold text-ink transition-all hover:bg-brand-600"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-xl bg-accent px-6 py-3 font-display text-sm font-semibold text-accent-ink transition-all hover:bg-brand-600"
+                style={{ boxShadow: "0 0 24px rgba(255, 212, 59, 0.25)" }}
               >
                 Get in Touch
                 <ArrowRight className="h-4 w-4" />
